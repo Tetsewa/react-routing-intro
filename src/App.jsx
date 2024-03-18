@@ -8,6 +8,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import HomePageWithNavigate from "./pages/HomePageWithNavigate"
 import projectsData from "./projects-data.json";
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
+import QueryStringExample from './pages/QueryStringExample';
 
  
 function App() {
@@ -23,6 +24,7 @@ function App() {
           path="/projects/:projectId"
           element={<ProjectDetailsPage projects={projectsData} />}
         />
+        <Route path="/example" element={<QueryStringExample />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
